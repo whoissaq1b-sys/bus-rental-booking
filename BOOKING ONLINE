@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bus Rental Transport Services UAE – Book Your Bus Now</title>
+<meta name="description" content="Professional bus rental services in UAE. Corporate, school, staff, airport transfers & city tours. Book online or call +971 563512807.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #488DEC;
+    --primary-dark: #2f6fd6;
+    --primary-light: #6aaaf5;
+    --secondary: #10182D;
+    --secondary-light: #1a2640;
+    --gold: #F5A623;
+    --gold-light: #ffc84a;
+    --white: #ffffff;
+    --gray-50: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-400: #94a3b8;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1e293b;
+    --success: #10b981;
+    --radius: 12px;
+    --radius-lg: 20px;
+    --shadow: 0 4px 24px rgba(16,24,45,0.10);
+    --shadow-lg: 0 8px 48px rgba(16,24,45,0.18);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-800);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── NAVBAR ── */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(16,24,45,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(72,141,236,0.2);
+    padding: 0 24px;
+    height: 68px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav-logo {
+    width: 42px; height: 42px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .nav-name { color: var(--white); font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; line-height: 1.2; }
+  .nav-name span { color: var(--primary); display: block; font-size: 0.7rem; font-weight: 400; font-family: 'Inter', sans-serif; letter-spacing: 0.05em; }
+  .nav-contacts { display: flex; align-items: center; gap: 10px; }
+  .nav-btn {
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem; font-weight: 600;
+    text-decoration: none; border: none; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .nav-btn-whatsapp { background: #25d366; color: var(--white); }
+  .nav-btn-whatsapp:hover { background: #1faf56; transform: translateY(-1px); }
+  .nav-btn-call { background: var(--primary); color: var(--white); }
+  .nav-btn-call:hover { background: var(--primary-dark); transform: translateY(-1px); }
+  .nav-phone-label { display: none; }
+  @media (max-width: 480px) {
+    .navbar { padding: 0 12px; }
+    .nav-btn span { display: none; }
+    .nav-btn { padding: 8px 10px; }
+  }
+  @media (min-width: 600px) { .nav-phone-label { display: inline; } }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: var(--secondary);
+    position: relative;
+    display: flex; align-items: center;
+    overflow: hidden;
+    padding-top: 68px;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 40%, rgba(72,141,236,0.15) 100%),
+      radial-gradient(ellipse at 70% 50%, rgba(72,141,236,0.25) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto;
+    padding: 80px 24px 60px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+  }
+  @media (max-width: 768px) {
+    .hero-content { grid-template-columns: 1fr; gap: 40px; padding: 40px 20px 40px; text-align: center; }
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(72,141,236,0.15);
+    border: 1px solid rgba(72,141,236,0.35);
+    color: var(--primary-light);
+    padding: 6px 14px; border-radius: 100px;
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero-badge::before { content: '●'; font-size: 0.5rem; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { opacity:1 } 50% { opacity:0.3 } }
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.12;
+    margin-bottom: 18px;
+  }
+  .hero-title em { color: var(--primary); font-style: normal; }
+  .hero-sub {
+    color: rgba(255,255,255,0.7);
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
+    line-height: 1.7;
+    margin-bottom: 36px;
+    max-width: 480px;
+  }
+  @media (max-width: 768px) { .hero-sub { margin: 0 auto 30px; } }
+  .hero-tags {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: 36px;
+  }
+  @media (max-width: 768px) { .hero-tags { justify-content: center; } }
+  .hero-tag {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.8);
+    padding: 4px 12px; border-radius: 100px;
+    font-size: 0.75rem; font-weight: 500;
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 768px) { .hero-actions { justify-content: center; } }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 13px 24px; border-radius: 10px;
+    font-size: 0.92rem; font-weight: 700;
+    text-decoration: none; border: none; cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .btn-primary { background: var(--primary); color: var(--white); }
+  .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(72,141,236,0.4); }
+  .btn-whatsapp { background: #25d366; color: var(--white); }
+  .btn-whatsapp:hover { background: #1faf56; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.35); }
+  .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.3); }
+  .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); transform: translateY(-2px); }
+  .hero-contacts { margin-top: 28px; }
+  .hero-contacts-label { color: rgba(255,255,255,0.4); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px; }
+  .hero-phones { display: flex; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 768px) { .hero-phones { justify-content: center; } }
+  .hero-phone {
+    color: var(--white); text-decoration: none;
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 600; font-size: 1rem;
+  }
+  .hero-phone:hover { color: var(--primary); }
+  .hero-phone-icon {
+    width: 32px; height: 32px;
+    background: var(--primary); border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+
+  /* Hero Visual */
+  .hero-visual { position: relative; }
+  .hero-card-stack { position: relative; }
+  .hero-main-card {
+    background: linear-gradient(135deg, rgba(72,141,236,0.15) 0%, rgba(16,24,45,0.8) 100%);
+    border: 1px solid rgba(72,141,236,0.3);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    backdrop-filter: blur(12px);
+  }
+  .hero-bus-icon { font-size: 64px; margin-bottom: 16px; display: block; text-align: center; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .hero-stat {
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px; padding: 14px 8px;
+  }
+  .hero-stat-num { font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--primary); display: block; }
+  .hero-stat-label { color: rgba(255,255,255,0.55); font-size: 0.7rem; font-weight: 500; }
+  .hero-float-badge {
+    position: absolute; top: -16px; right: -16px;
+    background: var(--gold);
+    color: var(--secondary);
+    font-weight: 800; font-size: 0.75rem;
+    padding: 8px 14px; border-radius: 100px;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(245,166,35,0.4);
+    animation: floatBadge 3s ease-in-out infinite;
+  }
+  @keyframes floatBadge { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+  @media (max-width: 768px) { .hero-visual { display: none; } }
+
+  /* ── SECTION BASE ── */
+  .section { padding: 80px 24px; }
+  .section-alt { background: var(--white); }
+  .container { max-width: 1200px; margin: 0 auto; }
+  .section-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--primary); font-size: 0.75rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-label::before { content: ''; width: 24px; height: 2px; background: var(--primary); display: block; }
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 800;
+    color: var(--secondary);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .section-sub {
+    color: var(--gray-600);
+    font-size: 1rem;
+    max-width: 560px;
+    line-height: 1.7;
+  }
+  .section-header { margin-bottom: 48px; }
+
+  /* ── FLEET ── */
+  .fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .fleet-card {
+    background: var(--white);
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .fleet-card::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(72,141,236,0.05) 0%, transparent 100%);
+    opacity: 0; transition: opacity 0.25s;
+  }
+  .fleet-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .fleet-card:hover::before { opacity: 1; }
+  .fleet-card.selected {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, rgba(72,141,236,0.06) 0%, rgba(72,141,236,0.02) 100%);
+    box-shadow: 0 0 0 3px rgba(72,141,236,0.15), var(--shadow);
+  }
+  .fleet-card input[type="radio"] { position: absolute; opacity: 0; }
+  .fleet-check {
+    position: absolute; top: 14px; right: 14px;
+    width: 22px; height: 22px;
+    border: 2px solid var(--gray-300);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .fleet-card.selected .fleet-check {
+    background: var(--primary); border-color: var(--primary); color: var(--white);
+    font-size: 11px;
+  }
+  .fleet-icon { font-size: 3rem; margin-bottom: 12px; display: block; }
+  .fleet-name { font-weight: 700; font-size: 0.95rem; color: var(--secondary); margin-bottom: 4px; }
+  .fleet-capacity {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: rgba(72,141,236,0.1); color: var(--primary);
+    font-size: 0.75rem; font-weight: 600;
+    padding: 3px 10px; border-radius: 100px;
+    margin-bottom: 10px;
+  }
+  .fleet-features { list-style: none; }
+  .fleet-features li {
+    color: var(--gray-600); font-size: 0.75rem;
+    display: flex; align-items: center; gap: 6px;
+    padding: 2px 0;
+  }
+  .fleet-features li::before { content: '✓'; color: var(--primary); font-weight: 700; }
+
+  /* ── BOOKING FORM ── */
+  .booking-section { background: var(--secondary); padding: 80px 24px; }
+  .booking-wrapper {
+    max-width: 900px; margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+  .form-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 32px 40px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  @media (max-width: 600px) { .form-header { padding: 24px 20px; } }
+  .form-header-icon {
+    width: 52px; height: 52px; min-width: 52px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+  }
+  .form-header-title { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--white); }
+  .form-header-sub { color: rgba(255,255,255,0.75); font-size: 0.85rem; margin-top: 2px; }
+  .form-body { padding: 40px; }
+  @media (max-width: 600px) { .form-body { padding: 24px 20px; } }
+
+  .form-section-title {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--primary); margin-bottom: 18px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray-100);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .form-section-title span {
+    background: var(--primary); color: var(--white);
+    width: 22px; height: 22px; border-radius: 50%;
+    font-size: 0.65rem; font-weight: 800;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .form-divider { height: 1px; background: var(--gray-100); margin: 32px 0; }
+
+  .form-grid { display: grid; gap: 16px; }
+  .form-grid-2 { grid-template-columns: 1fr 1fr; }
+  .form-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  @media (max-width: 640px) {
+    .form-grid-2, .form-grid-3 { grid-template-columns: 1fr; }
+  }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group.span-2 { grid-column: span 2; }
+  @media (max-width: 640px) { .form-group.span-2 { grid-column: span 1; } }
+  label {
+    font-size: 0.8rem; font-weight: 600; color: var(--gray-700);
+    display: flex; align-items: center; gap: 4px;
+  }
+  label .req { color: #ef4444; }
+  input[type="text"], input[type="tel"], input[type="email"], input[type="date"],
+  input[type="time"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--gray-800);
+    background: var(--white);
+    transition: all 0.2s;
+    outline: none;
+    appearance: none;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(72,141,236,0.12);
+  }
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23475569' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center;
+    padding-right: 40px; cursor: pointer;
+  }
+  textarea { resize: vertical; min-height: 110px; }
+
+  /* Trip Type Grid */
+  .trip-type-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px;
+  }
+  .trip-type-option { position: relative; }
+  .trip-type-option input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .trip-type-label {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 14px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.82rem; font-weight: 500; color: var(--gray-700);
+    transition: all 0.2s;
+  }
+  .trip-type-label:hover { border-color: var(--primary); color: var(--primary); }
+  .trip-type-option input:checked + .trip-type-label {
+    border-color: var(--primary);
+    background: rgba(72,141,236,0.08);
+    color: var(--primary); font-weight: 600;
+  }
+  .trip-type-label .trip-icon { font-size: 1rem; }
+
+  /* Budget Options */
+  .budget-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px;
+  }
+  .budget-option { position: relative; }
+  .budget-option input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .budget-label {
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px 10px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.82rem; font-weight: 600; color: var(--gray-700);
+    transition: all 0.2s; text-align: center;
+  }
+  .budget-label:hover { border-color: var(--gold); color: var(--secondary); }
+  .budget-option input:checked + .budget-label {
+    border-color: var(--gold);
+    background: rgba(245,166,35,0.08);
+    color: var(--secondary);
+  }
+
+  /* Contact Method */
+  .contact-method-grid { display: flex; gap: 12px; flex-wrap: wrap; }
+  .contact-method-option { position: relative; }
+  .contact-method-option input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .contact-method-label {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 20px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 0.85rem; font-weight: 600; color: var(--gray-700);
+    transition: all 0.2s;
+  }
+  .contact-method-label:hover { border-color: var(--primary); }
+  .contact-method-option input:checked + .contact-method-label {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--white);
+  }
+
+  /* Submit */
+  .submit-btn {
+    width: 100%; padding: 16px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white); border: none; border-radius: var(--radius);
+    font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700;
+    cursor: pointer; transition: all 0.25s;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-top: 8px;
+  }
+  .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(72,141,236,0.45); }
+  .submit-btn:active { transform: translateY(0); }
+  .form-privacy { text-align: center; color: var(--gray-400); font-size: 0.75rem; margin-top: 12px; }
+
+  /* Success */
+  .success-message {
+    display: none;
+    background: linear-gradient(135deg, rgba(16,185,129,0.08) 0%, rgba(72,141,236,0.05) 100%);
+    border: 2px solid var(--success);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    text-align: center;
+    margin: 32px 40px 40px;
+  }
+  .success-icon { font-size: 3rem; margin-bottom: 16px; }
+  .success-title { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--secondary); margin-bottom: 8px; }
+  .success-sub { color: var(--gray-600); line-height: 1.7; }
+  .success-actions { display: flex; gap: 12px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
+  .btn-green { background: #25d366; color: var(--white); }
+  .btn-green:hover { background: #1faf56; }
+  .btn-secondary { background: var(--secondary); color: var(--white); }
+  .btn-secondary:hover { background: var(--secondary-light); }
+
+  /* ── DIRECT CONTACT ── */
+  .contact-section {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+    padding: 80px 24px;
+  }
+  .contact-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+  .contact-title { font-family: 'Syne', sans-serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+  .contact-sub { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 40px; }
+  .contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 36px; }
+  .contact-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .contact-card-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+  .contact-card-label { color: rgba(255,255,255,0.5); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+  .contact-card-num { color: var(--white); font-weight: 700; font-size: 1.05rem; text-decoration: none; display: block; }
+  .contact-card-num:hover { color: var(--primary); }
+  .contact-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── WHY CHOOSE US ── */
+  .why-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px;
+  }
+  .why-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    transition: all 0.25s;
+  }
+  .why-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: var(--shadow); }
+  .why-icon {
+    width: 52px; height: 52px;
+    background: linear-gradient(135deg, rgba(72,141,236,0.12) 0%, rgba(72,141,236,0.06) 100%);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  .why-title { font-weight: 700; color: var(--secondary); margin-bottom: 6px; font-size: 0.95rem; }
+  .why-desc { color: var(--gray-600); font-size: 0.82rem; line-height: 1.6; }
+
+  /* ── FLOATING WHATSAPP ── */
+  .fab-whatsapp {
+    position: fixed; bottom: 28px; right: 24px; z-index: 999;
+    background: #25d366;
+    color: var(--white);
+    width: 58px; height: 58px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+    animation: fabFloat 3s ease-in-out infinite;
+    transition: transform 0.2s;
+  }
+  .fab-whatsapp:hover { transform: scale(1.12); }
+  @keyframes fabFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+  .fab-tooltip {
+    position: absolute; right: 68px;
+    background: var(--secondary); color: var(--white);
+    padding: 6px 12px; border-radius: 8px;
+    font-size: 0.78rem; font-weight: 600;
+    white-space: nowrap;
+    opacity: 0; pointer-events: none;
+    transform: translateX(6px);
+    transition: all 0.2s;
+  }
+  .fab-whatsapp:hover .fab-tooltip { opacity: 1; transform: translateX(0); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--secondary);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 40px 24px;
+    text-align: center;
+  }
+  .footer-logo { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+  .footer-logo span { color: var(--primary); }
+  .footer-contact { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 4px; }
+  .footer-contact a { color: var(--primary); text-decoration: none; }
+  .footer-copy { color: rgba(255,255,255,0.25); font-size: 0.75rem; margin-top: 20px; }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: all 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#" class="nav-brand">
+    <div class="nav-logo">🚌</div>
+    <div class="nav-name">Bus Rental<span>Transport Services UAE</span></div>
+  </a>
+  <div class="nav-contacts">
+    <a href="https://wa.me/971563512807?text=Hello%2C%20I%20need%20bus%20rental%20services" class="nav-btn nav-btn-whatsapp" target="_blank">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span class="nav-phone-label">WhatsApp</span>
+    </a>
+    <a href="tel:+971563512807" class="nav-btn nav-btn-call">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span class="nav-phone-label">Call Now</span>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-content container">
+    <div class="hero-left">
+      <div class="hero-badge">🇦🇪 UAE's Trusted Transport Partner</div>
+      <h1 class="hero-title">Book Your <em>Bus Rental</em> in UAE</h1>
+      <p class="hero-sub">Reliable, comfortable, and affordable bus rental services for corporate, school, staff, labour, airport transfers, city tours, and event transportation.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">✈️ Airport Transfers</span>
+        <span class="hero-tag">🏢 Corporate</span>
+        <span class="hero-tag">🎓 School</span>
+        <span class="hero-tag">👷 Labour</span>
+        <span class="hero-tag">🎉 Events</span>
+        <span class="hero-tag">🗺️ City Tours</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Get Instant Quote
+        </a>
+        <a href="https://wa.me/971563512807?text=Hello%2C%20I%20need%20a%20bus%20rental%20quote" class="btn btn-whatsapp" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Now
+        </a>
+        <a href="tel:+971563512807" class="btn btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+      <div class="hero-contacts">
+        <div class="hero-contacts-label">Direct Contact Numbers</div>
+        <div class="hero-phones">
+          <a href="tel:+971563512807" class="hero-phone">
+            <div class="hero-phone-icon">📞</div>
+            +971 563 512 807
+          </a>
+          <a href="tel:+971588554417" class="hero-phone">
+            <div class="hero-phone-icon">📱</div>
+            +971 588 554 417
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="hero-float-badge">⚡ Instant Quotes Available</div>
+        <div class="hero-main-card">
+          <span class="hero-bus-icon">🚌</span>
+          <div style="color:rgba(255,255,255,0.8); font-size:0.9rem; text-align:center; margin-bottom:8px;">Fleet Available Across UAE</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:16px;">
+            <span style="background:rgba(72,141,236,0.15);color:#6aaaf5;padding:3px 10px;border-radius:100px;font-size:0.72rem;font-weight:600;">7 Seater</span>
+            <span style="background:rgba(72,141,236,0.15);color:#6aaaf5;padding:3px 10px;border-radius:100px;font-size:0.72rem;font-weight:600;">22 Coaster</span>
+            <span style="background:rgba(72,141,236,0.15);color:#6aaaf5;padding:3px 10px;border-radius:100px;font-size:0.72rem;font-weight:600;">50 Seater</span>
+            <span style="background:rgba(72,141,236,0.15);color:#6aaaf5;padding:3px 10px;border-radius:100px;font-size:0.72rem;font-weight:600;">Luxury Bus</span>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num">500+</span>
+              <span class="hero-stat-label">Trips Done</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">24/7</span>
+              <span class="hero-stat-label">Available</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">10+</span>
+              <span class="hero-stat-label">Fleet Types</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET SECTION -->
+<section class="section section-alt" id="fleet">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Our Fleet</div>
+      <h2 class="section-title">Choose Your Vehicle</h2>
+      <p class="section-sub">From compact vans to luxury buses — we have the right vehicle for every trip size and requirement.</p>
+    </div>
+    <div class="fleet-grid reveal">
+      <!-- Fleet cards are generated by JS below -->
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="booking-section" id="booking">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px;" class="reveal">
+      <div class="section-label" style="color:rgba(72,141,236,0.9);justify-content:center;">
+        <span style="background:rgba(72,141,236,0.9);height:2px;display:block;width:24px;"></span>
+        Book Now
+      </div>
+      <h2 class="section-title" style="color:var(--white);">Request Your Quote & Booking</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6);margin:0 auto;">Fill in the details below and we'll get back to you with pricing and availability within minutes.</p>
+    </div>
+    <div class="booking-wrapper reveal">
+      <div class="form-header">
+        <div class="form-header-icon">📋</div>
+        <div>
+          <div class="form-header-title">Booking Request Form</div>
+          <div class="form-header-sub">All fields marked with * are required. We'll respond within 30 minutes.</div>
+        </div>
+      </div>
+
+      <form id="bookingForm" class="form-body" novalidate>
+
+        <!-- 1. TRIP INFO -->
+        <div class="form-section-title"><span>1</span> Trip Information</div>
+        <div class="form-grid form-grid-2" style="margin-bottom:16px;">
+          <div class="form-group">
+            <label for="pickup">📍 Pickup Location <span class="req">*</span></label>
+            <input type="text" id="pickup" name="pickup" placeholder="e.g. Dubai Marina, Abu Dhabi" required>
+          </div>
+          <div class="form-group">
+            <label for="dropoff">🏁 Drop-off Location <span class="req">*</span></label>
+            <input type="text" id="dropoff" name="dropoff" placeholder="e.g. Dubai Airport, Sharjah" required>
+          </div>
+        </div>
+
+        <div style="margin-bottom:16px;">
+          <label style="margin-bottom:10px;display:block;">🗺️ Trip Type <span class="req">*</span></label>
+          <div class="trip-type-grid" id="tripTypeGrid"></div>
+        </div>
+
+        <div class="form-grid form-grid-3" style="margin-bottom:16px;">
+          <div class="form-group">
+            <label for="travelDate">📅 Travel Date <span class="req">*</span></label>
+            <input type="date" id="travelDate" name="travelDate" required>
+          </div>
+          <div class="form-group">
+            <label for="returnDate">📅 Return Date</label>
+            <input type="date" id="returnDate" name="returnDate">
+          </div>
+          <div class="form-group">
+            <label for="pickupTime">⏰ Pickup Time <span class="req">*</span></label>
+            <input type="time" id="pickupTime" name="pickupTime" required>
+          </div>
+        </div>
+
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label for="passengers">👥 Number of Passengers <span class="req">*</span></label>
+            <input type="number" id="passengers" name="passengers" placeholder="e.g. 30" min="1" max="500" required>
+          </div>
+          <div class="form-group">
+            <label for="vehicles">🚌 Number of Vehicles Required</label>
+            <select id="vehicles" name="vehicles">
+              <option value="">Select number</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- 2. CUSTOMER DETAILS -->
+        <div class="form-section-title"><span>2</span> Customer Details</div>
+        <div class="form-grid form-grid-2" style="margin-bottom:16px;">
+          <div class="form-group">
+            <label for="fullName">👤 Full Name <span class="req">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="company">🏢 Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Your company (optional)">
+          </div>
+        </div>
+        <div class="form-grid form-grid-2" style="margin-bottom:16px;">
+          <div class="form-group">
+            <label for="mobile">📱 Mobile Number <span class="req">*</span></label>
+            <input type="tel" id="mobile" name="mobile" placeholder="+971 XXXXXXXXX" required>
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">💬 WhatsApp Number</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="+971 XXXXXXXXX (if different)">
+          </div>
+        </div>
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label for="email">✉️ Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="country">🌍 Country</label>
+            <select id="country" name="country">
+              <option value="">Select country</option>
+              <option selected>United Arab Emirates</option>
+              <option>Saudi Arabia</option><option>Oman</option><option>Qatar</option>
+              <option>Kuwait</option><option>Bahrain</option><option>India</option>
+              <option>Pakistan</option><option>Philippines</option><option>United Kingdom</option>
+              <option>United States</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- 3. REQUIREMENTS -->
+        <div class="form-section-title"><span>3</span> Additional Requirements</div>
+        <div class="form-group">
+          <label for="requirements">📝 Describe Your Requirements</label>
+          <textarea id="requirements" name="requirements" placeholder="Describe your transportation requirements, number of trips, special requests, luggage requirements, pickup points, destinations, AC preferences, child seats, or any other details..."></textarea>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <!-- 4. BUDGET -->
+        <div class="form-section-title"><span>4</span> Estimated Budget</div>
+        <div class="budget-grid" id="budgetGrid"></div>
+
+        <div class="form-divider"></div>
+
+        <!-- 5. PREFERRED CONTACT -->
+        <div class="form-section-title"><span>5</span> Preferred Contact Method</div>
+        <div class="contact-method-grid" id="contactMethodGrid"></div>
+
+        <div class="form-divider"></div>
+
+        <!-- SUBMIT -->
+        <button type="submit" class="submit-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Request Quote & Booking
+        </button>
+        <p class="form-privacy">🔒 Your information is private and will only be used to respond to your booking request.</p>
+      </form>
+
+      <!-- SUCCESS -->
+      <div class="success-message" id="successMessage">
+        <div class="success-icon">✅</div>
+        <div class="success-title">Booking Request Received!</div>
+        <p class="success-sub">Thank you for your booking request. Our team will contact you shortly with pricing and availability.<br><br>For immediate assistance, reach us directly on WhatsApp or phone.</p>
+        <div class="success-actions">
+          <a href="https://wa.me/971563512807?text=Hello%2C%20I%20just%20submitted%20a%20booking%20request" class="btn btn-whatsapp" target="_blank">
+            💬 WhatsApp Us Now
+          </a>
+          <a href="tel:+971563512807" class="btn btn-secondary">📞 Call Us Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DIRECT CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner reveal">
+    <div class="section-label" style="color:rgba(72,141,236,0.9);justify-content:center;margin-bottom:12px;">
+      <span style="background:rgba(72,141,236,0.9);height:2px;display:block;width:24px;"></span>
+      Get In Touch
+    </div>
+    <h2 class="contact-title">Need Immediate Assistance?</h2>
+    <p class="contact-sub">Our team is available 24/7 to assist you with bookings, pricing, and transport arrangements across the UAE.</p>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <span class="contact-card-icon">📞</span>
+        <div class="contact-card-label">Call Direct</div>
+        <a href="tel:+971563512807" class="contact-card-num">+971 563 512 807</a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-icon">💬</span>
+        <div class="contact-card-label">WhatsApp</div>
+        <a href="https://wa.me/971563512807" class="contact-card-num" target="_blank">+971 563 512 807</a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-icon">📱</span>
+        <div class="contact-card-label">Alternative</div>
+        <a href="tel:+971588554417" class="contact-card-num">+971 588 554 417</a>
+      </div>
+    </div>
+    <div class="contact-actions">
+      <a href="tel:+971563512807" class="btn btn-primary" style="font-size:0.95rem;">📞 Call Now</a>
+      <a href="https://wa.me/971563512807?text=Hello%2C%20I%20need%20bus%20rental%20services%20in%20UAE" class="btn btn-whatsapp" style="font-size:0.95rem;" target="_blank">💬 WhatsApp Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section section-alt" id="why">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Why Choose Us</div>
+      <h2 class="section-title">The UAE's Trusted Transport Partner</h2>
+      <p class="section-sub" style="margin:0 auto;">We deliver reliable, professional transport services tailored to your needs across all Emirates.</p>
+    </div>
+    <div class="why-grid reveal" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Bus Rental <span>Transport Services</span></div>
+  <p class="footer-contact" style="margin-top:12px;">📞 <a href="tel:+971563512807">+971 563 512 807</a></p>
+  <p class="footer-contact">💬 <a href="https://wa.me/971563512807" target="_blank">WhatsApp: +971 563 512 807</a></p>
+  <p class="footer-contact" style="margin-top:8px;">🇦🇪 Serving all Emirates — Dubai · Abu Dhabi · Sharjah · Ajman · Ras Al Khaimah · Fujairah · Umm Al Quwain</p>
+  <p class="footer-copy">© 2025 Bus Rental Transport Services UAE. All rights reserved.</p>
+</footer>
+
+<!-- FAB WhatsApp -->
+<a href="https://wa.me/971563512807?text=Hello%2C%20I%20need%20bus%20rental%20services" class="fab-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+  <div class="fab-tooltip">Chat on WhatsApp</div>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// ── DATA ──
+const fleet = [
+  { icon:'🚗', name:'7 Seater', capacity:'Up to 7 Passengers', features:['AC Equipped','Comfortable Seats','Luggage Space'] },
+  { icon:'🚐', name:'12 Seater Hiace', capacity:'Up to 12 Passengers', features:['AC Equipped','Spacious Interior','Airport Ready'] },
+  { icon:'🚐', name:'14 Seater Hiace', capacity:'Up to 14 Passengers', features:['AC Equipped','Reclining Seats','USB Charging'] },
+  { icon:'🚌', name:'22 Seater Coaster', capacity:'Up to 22 Passengers', features:['AC Equipped','Luggage Hold','Comfortable Ride'] },
+  { icon:'🚌', name:'30 Seater Bus', capacity:'Up to 30 Passengers', features:['Full AC','Storage Space','Group Travel'] },
+  { icon:'🚌', name:'33 Seater Bus', capacity:'Up to 33 Passengers', features:['Full AC','Reclining Seats','Corporate Ready'] },
+  { icon:'🚌', name:'35 Seater Bus', capacity:'Up to 35 Passengers', features:['Full AC','Luggage Storage','WiFi Optional'] },
+  { icon:'🚌', name:'50 Seater Bus', capacity:'Up to 50 Passengers', features:['Full AC','Large Luggage Hold','Tour Ready'] },
+  { icon:'⭐', name:'Luxury Bus', capacity:'Premium Experience', features:['VIP Interior','Entertainment System','Extra Legroom'] },
+  { icon:'🚌', name:'Multiple Vehicles', capacity:'Large Groups & Events', features:['Fleet Coordination','Event Specialist','Corporate Rates'] },
+];
+
+const tripTypes = [
+  {val:'one-way', icon:'➡️', label:'One Way'},
+  {val:'return', icon:'↩️', label:'Return Trip'},
+  {val:'daily', icon:'📅', label:'Daily Transport'},
+  {val:'monthly', icon:'🗓️', label:'Monthly Contract'},
+  {val:'airport', icon:'✈️', label:'Airport Transfer'},
+  {val:'city-tour', icon:'🗺️', label:'City Tour'},
+  {val:'event', icon:'🎉', label:'Event Transport'},
+  {val:'staff', icon:'👷', label:'Staff Transport'},
+  {val:'school', icon:'🎓', label:'School Transport'},
+];
+
+const budgets = [
+  'Less than AED 500',
+  'AED 500 – 1,000',
+  'AED 1,000 – 3,000',
+  'AED 3,000 – 5,000',
+  'AED 5,000+',
+];
+
+const contactMethods = [
+  {val:'call', icon:'📞', label:'Call'},
+  {val:'whatsapp', icon:'💬', label:'WhatsApp'},
+  {val:'email', icon:'✉️', label:'Email'},
+];
+
+const whyCards = [
+  {icon:'👨‍✈️', title:'Professional Drivers', desc:'Licensed, experienced, and background-checked drivers familiar with all UAE routes.'},
+  {icon:'✨', title:'Clean Vehicles', desc:'All vehicles are regularly sanitized, maintained, and inspected for your safety.'},
+  {icon:'💰', title:'Competitive Rates', desc:'Transparent pricing with no hidden fees. Best value for corporate and group travel.'},
+  {icon:'✈️', title:'Airport Transfers', desc:'Punctual airport pickups and drop-offs from all UAE international airports.'},
+  {icon:'🎓', title:'School Transport', desc:'Safe, reliable, and dedicated school bus services with trained drivers.'},
+  {icon:'🏢', title:'Corporate Transport', desc:'Customized staff shuttle services for offices, factories, and business parks.'},
+  {icon:'👷', title:'Labour Transport', desc:'Efficient and affordable transportation for labour camps and construction sites.'},
+  {icon:'🎉', title:'Event Transportation', desc:'Full fleet coordination for weddings, conferences, tours, and group events.'},
+  {icon:'🕐', title:'24/7 Support', desc:'Our team is available round-the-clock to assist with bookings and emergencies.'},
+];
+
+// ── RENDER FLEET ──
+const fleetGrid = document.querySelector('.fleet-grid');
+fleet.forEach((v, i) => {
+  const card = document.createElement('label');
+  card.className = 'fleet-card';
+  card.innerHTML = `
+    <input type="radio" name="fleetType" value="${v.name}">
+    <div class="fleet-check">✓</div>
+    <span class="fleet-icon">${v.icon}</span>
+    <div class="fleet-name">${v.name}</div>
+    <div class="fleet-capacity">👥 ${v.capacity}</div>
+    <ul class="fleet-features">${v.features.map(f=>`<li>${f}</li>`).join('')}</ul>
+  `;
+  card.addEventListener('click', () => {
+    document.querySelectorAll('.fleet-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+  });
+  fleetGrid.appendChild(card);
+});
+
+// ── RENDER TRIP TYPES ──
+const tripGrid = document.getElementById('tripTypeGrid');
+tripTypes.forEach((t,i) => {
+  const el = document.createElement('div');
+  el.className = 'trip-type-option';
+  el.innerHTML = `
+    <input type="radio" name="tripType" id="tt${i}" value="${t.val}" ${i===0?'checked':''}>
+    <label class="trip-type-label" for="tt${i}">
+      <span class="trip-icon">${t.icon}</span> ${t.label}
+    </label>
+  `;
+  tripGrid.appendChild(el);
+});
+
+// ── RENDER BUDGETS ──
+const budgetGrid = document.getElementById('budgetGrid');
+budgets.forEach((b,i) => {
+  const el = document.createElement('div');
+  el.className = 'budget-option';
+  el.innerHTML = `
+    <input type="radio" name="budget" id="b${i}" value="${b}" ${i===1?'checked':''}>
+    <label class="budget-label" for="b${i}">${b}</label>
+  `;
+  budgetGrid.appendChild(el);
+});
+
+// ── RENDER CONTACT METHODS ──
+const cmGrid = document.getElementById('contactMethodGrid');
+contactMethods.forEach((c,i) => {
+  const el = document.createElement('div');
+  el.className = 'contact-method-option';
+  el.innerHTML = `
+    <input type="radio" name="contactMethod" id="cm${i}" value="${c.val}" ${i===1?'checked':''}>
+    <label class="contact-method-label" for="cm${i}">${c.icon} ${c.label}</label>
+  `;
+  cmGrid.appendChild(el);
+});
+
+// ── RENDER WHY CARDS ──
+const whyGrid = document.getElementById('whyGrid');
+whyCards.forEach(w => {
+  const card = document.createElement('div');
+  card.className = 'why-card';
+  card.innerHTML = `<div class="why-icon">${w.icon}</div><div class="why-title">${w.title}</div><div class="why-desc">${w.desc}</div>`;
+  whyGrid.appendChild(card);
+});
+
+// ── MIN DATE ──
+const today = new Date().toISOString().split('T')[0];
+document.getElementById('travelDate').min = today;
+document.getElementById('returnDate').min = today;
+
+// ── FORM SUBMIT ──
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const required = this.querySelectorAll('[required]');
+  let valid = true;
+  required.forEach(f => {
+    if (!f.value.trim()) {
+      f.style.borderColor = '#ef4444';
+      f.style.boxShadow = '0 0 0 3px rgba(239,68,68,0.12)';
+      valid = false;
+      f.addEventListener('input', () => {
+        f.style.borderColor = '';
+        f.style.boxShadow = '';
+      }, { once: true });
+    }
+  });
+  if (!valid) {
+    const firstErr = this.querySelector('[required]:placeholder-shown, [required][value=""]');
+    if (firstErr) firstErr.scrollIntoView({ behavior:'smooth', block:'center' });
+    return;
+  }
+  this.style.display = 'none';
+  const success = document.getElementById('successMessage');
+  success.style.display = 'block';
+  success.scrollIntoView({ behavior:'smooth', block:'center' });
+});
+
+// ── SCROLL REVEAL ──
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
